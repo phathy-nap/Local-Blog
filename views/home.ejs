@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs') %>
+
+<a href="/new"><button>New</button></a>
+<hr>
+  <%  storage.forEach((p) => { %>
+    <h3><%=p.title%></h3>
+    <p><%=p.description%></p>
+    <a href="/edit/<%=p.id%>"><button>Edit</button></a>
+    <form action="/delete/<%=p.id%>" method="post" style="display: inline;"><button>delete</button></form>
+    <hr>
+<%  }) %>
+
+<%- include('./partials/footer.ejs') %>

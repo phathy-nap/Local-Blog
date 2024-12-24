@@ -1,0 +1,12 @@
+/* give padding to the whole page */
+body {
+  padding: 2rem;
+}
+
+/* title (Blogg) */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: Poppins;
+}
